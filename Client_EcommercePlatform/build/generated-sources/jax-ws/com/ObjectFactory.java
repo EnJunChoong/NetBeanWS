@@ -24,23 +24,12 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _Address1_QNAME = new QName("http://ProfileInfo/", "Address1");
-    private final static QName _Address1Response_QNAME = new QName("http://ProfileInfo/", "Address1Response");
-    private final static QName _Address2_QNAME = new QName("http://ProfileInfo/", "Address2");
-    private final static QName _Address2Response_QNAME = new QName("http://ProfileInfo/", "Address2Response");
-    private final static QName _City_QNAME = new QName("http://ProfileInfo/", "City");
-    private final static QName _CityResponse_QNAME = new QName("http://ProfileInfo/", "CityResponse");
-    private final static QName _ClassNotFoundException_QNAME = new QName("http://ProfileInfo/", "ClassNotFoundException");
-    private final static QName _CustomerName_QNAME = new QName("http://ProfileInfo/", "CustomerName");
-    private final static QName _CustomerNameResponse_QNAME = new QName("http://ProfileInfo/", "CustomerNameResponse");
-    private final static QName _GetProfile_QNAME = new QName("http://ProfileInfo/", "GetProfile");
-    private final static QName _GetProfileResponse_QNAME = new QName("http://ProfileInfo/", "GetProfileResponse");
-    private final static QName _Phone_QNAME = new QName("http://ProfileInfo/", "Phone");
-    private final static QName _PhoneResponse_QNAME = new QName("http://ProfileInfo/", "PhoneResponse");
-    private final static QName _State_QNAME = new QName("http://ProfileInfo/", "State");
-    private final static QName _StateResponse_QNAME = new QName("http://ProfileInfo/", "StateResponse");
-    private final static QName _Zip_QNAME = new QName("http://ProfileInfo/", "Zip");
-    private final static QName _ZipResponse_QNAME = new QName("http://ProfileInfo/", "ZipResponse");
+    private final static QName _ReturnName_QNAME = new QName("http://com/", "ReturnName");
+    private final static QName _ReturnNameResponse_QNAME = new QName("http://com/", "ReturnNameResponse");
+    private final static QName _Login_QNAME = new QName("http://com/", "login");
+    private final static QName _LoginResponse_QNAME = new QName("http://com/", "loginResponse");
+    private final static QName _Register_QNAME = new QName("http://com/", "register");
+    private final static QName _RegisterResponse_QNAME = new QName("http://com/", "registerResponse");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com
@@ -50,308 +39,105 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Address1 }
+     * Create an instance of {@link ReturnName }
      * 
      */
-    public Address1 createAddress1() {
-        return new Address1();
+    public ReturnName createReturnName() {
+        return new ReturnName();
     }
 
     /**
-     * Create an instance of {@link Address1Response }
+     * Create an instance of {@link ReturnNameResponse }
      * 
      */
-    public Address1Response createAddress1Response() {
-        return new Address1Response();
+    public ReturnNameResponse createReturnNameResponse() {
+        return new ReturnNameResponse();
     }
 
     /**
-     * Create an instance of {@link Address2 }
+     * Create an instance of {@link Login }
      * 
      */
-    public Address2 createAddress2() {
-        return new Address2();
+    public Login createLogin() {
+        return new Login();
     }
 
     /**
-     * Create an instance of {@link Address2Response }
+     * Create an instance of {@link LoginResponse }
      * 
      */
-    public Address2Response createAddress2Response() {
-        return new Address2Response();
+    public LoginResponse createLoginResponse() {
+        return new LoginResponse();
     }
 
     /**
-     * Create an instance of {@link City }
+     * Create an instance of {@link Register }
      * 
      */
-    public City createCity() {
-        return new City();
+    public Register createRegister() {
+        return new Register();
     }
 
     /**
-     * Create an instance of {@link CityResponse }
+     * Create an instance of {@link RegisterResponse }
      * 
      */
-    public CityResponse createCityResponse() {
-        return new CityResponse();
+    public RegisterResponse createRegisterResponse() {
+        return new RegisterResponse();
     }
 
     /**
-     * Create an instance of {@link ClassNotFoundException }
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReturnName }{@code >}}
      * 
      */
-    public ClassNotFoundException createClassNotFoundException() {
-        return new ClassNotFoundException();
+    @XmlElementDecl(namespace = "http://com/", name = "ReturnName")
+    public JAXBElement<ReturnName> createReturnName(ReturnName value) {
+        return new JAXBElement<ReturnName>(_ReturnName_QNAME, ReturnName.class, null, value);
     }
 
     /**
-     * Create an instance of {@link CustomerName }
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReturnNameResponse }{@code >}}
      * 
      */
-    public CustomerName createCustomerName() {
-        return new CustomerName();
+    @XmlElementDecl(namespace = "http://com/", name = "ReturnNameResponse")
+    public JAXBElement<ReturnNameResponse> createReturnNameResponse(ReturnNameResponse value) {
+        return new JAXBElement<ReturnNameResponse>(_ReturnNameResponse_QNAME, ReturnNameResponse.class, null, value);
     }
 
     /**
-     * Create an instance of {@link CustomerNameResponse }
+     * Create an instance of {@link JAXBElement }{@code <}{@link Login }{@code >}}
      * 
      */
-    public CustomerNameResponse createCustomerNameResponse() {
-        return new CustomerNameResponse();
+    @XmlElementDecl(namespace = "http://com/", name = "login")
+    public JAXBElement<Login> createLogin(Login value) {
+        return new JAXBElement<Login>(_Login_QNAME, Login.class, null, value);
     }
 
     /**
-     * Create an instance of {@link GetProfile }
+     * Create an instance of {@link JAXBElement }{@code <}{@link LoginResponse }{@code >}}
      * 
      */
-    public GetProfile createGetProfile() {
-        return new GetProfile();
+    @XmlElementDecl(namespace = "http://com/", name = "loginResponse")
+    public JAXBElement<LoginResponse> createLoginResponse(LoginResponse value) {
+        return new JAXBElement<LoginResponse>(_LoginResponse_QNAME, LoginResponse.class, null, value);
     }
 
     /**
-     * Create an instance of {@link GetProfileResponse }
+     * Create an instance of {@link JAXBElement }{@code <}{@link Register }{@code >}}
      * 
      */
-    public GetProfileResponse createGetProfileResponse() {
-        return new GetProfileResponse();
+    @XmlElementDecl(namespace = "http://com/", name = "register")
+    public JAXBElement<Register> createRegister(Register value) {
+        return new JAXBElement<Register>(_Register_QNAME, Register.class, null, value);
     }
 
     /**
-     * Create an instance of {@link Phone }
+     * Create an instance of {@link JAXBElement }{@code <}{@link RegisterResponse }{@code >}}
      * 
      */
-    public Phone createPhone() {
-        return new Phone();
-    }
-
-    /**
-     * Create an instance of {@link PhoneResponse }
-     * 
-     */
-    public PhoneResponse createPhoneResponse() {
-        return new PhoneResponse();
-    }
-
-    /**
-     * Create an instance of {@link State }
-     * 
-     */
-    public State createState() {
-        return new State();
-    }
-
-    /**
-     * Create an instance of {@link StateResponse }
-     * 
-     */
-    public StateResponse createStateResponse() {
-        return new StateResponse();
-    }
-
-    /**
-     * Create an instance of {@link Zip }
-     * 
-     */
-    public Zip createZip() {
-        return new Zip();
-    }
-
-    /**
-     * Create an instance of {@link ZipResponse }
-     * 
-     */
-    public ZipResponse createZipResponse() {
-        return new ZipResponse();
-    }
-
-    /**
-     * Create an instance of {@link Throwable }
-     * 
-     */
-    public Throwable createThrowable() {
-        return new Throwable();
-    }
-
-    /**
-     * Create an instance of {@link StackTraceElement }
-     * 
-     */
-    public StackTraceElement createStackTraceElement() {
-        return new StackTraceElement();
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Address1 }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ProfileInfo/", name = "Address1")
-    public JAXBElement<Address1> createAddress1(Address1 value) {
-        return new JAXBElement<Address1>(_Address1_QNAME, Address1 .class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Address1Response }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ProfileInfo/", name = "Address1Response")
-    public JAXBElement<Address1Response> createAddress1Response(Address1Response value) {
-        return new JAXBElement<Address1Response>(_Address1Response_QNAME, Address1Response.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Address2 }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ProfileInfo/", name = "Address2")
-    public JAXBElement<Address2> createAddress2(Address2 value) {
-        return new JAXBElement<Address2>(_Address2_QNAME, Address2 .class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Address2Response }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ProfileInfo/", name = "Address2Response")
-    public JAXBElement<Address2Response> createAddress2Response(Address2Response value) {
-        return new JAXBElement<Address2Response>(_Address2Response_QNAME, Address2Response.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link City }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ProfileInfo/", name = "City")
-    public JAXBElement<City> createCity(City value) {
-        return new JAXBElement<City>(_City_QNAME, City.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CityResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ProfileInfo/", name = "CityResponse")
-    public JAXBElement<CityResponse> createCityResponse(CityResponse value) {
-        return new JAXBElement<CityResponse>(_CityResponse_QNAME, CityResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ClassNotFoundException }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ProfileInfo/", name = "ClassNotFoundException")
-    public JAXBElement<ClassNotFoundException> createClassNotFoundException(ClassNotFoundException value) {
-        return new JAXBElement<ClassNotFoundException>(_ClassNotFoundException_QNAME, ClassNotFoundException.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CustomerName }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ProfileInfo/", name = "CustomerName")
-    public JAXBElement<CustomerName> createCustomerName(CustomerName value) {
-        return new JAXBElement<CustomerName>(_CustomerName_QNAME, CustomerName.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CustomerNameResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ProfileInfo/", name = "CustomerNameResponse")
-    public JAXBElement<CustomerNameResponse> createCustomerNameResponse(CustomerNameResponse value) {
-        return new JAXBElement<CustomerNameResponse>(_CustomerNameResponse_QNAME, CustomerNameResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetProfile }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ProfileInfo/", name = "GetProfile")
-    public JAXBElement<GetProfile> createGetProfile(GetProfile value) {
-        return new JAXBElement<GetProfile>(_GetProfile_QNAME, GetProfile.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetProfileResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ProfileInfo/", name = "GetProfileResponse")
-    public JAXBElement<GetProfileResponse> createGetProfileResponse(GetProfileResponse value) {
-        return new JAXBElement<GetProfileResponse>(_GetProfileResponse_QNAME, GetProfileResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Phone }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ProfileInfo/", name = "Phone")
-    public JAXBElement<Phone> createPhone(Phone value) {
-        return new JAXBElement<Phone>(_Phone_QNAME, Phone.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link PhoneResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ProfileInfo/", name = "PhoneResponse")
-    public JAXBElement<PhoneResponse> createPhoneResponse(PhoneResponse value) {
-        return new JAXBElement<PhoneResponse>(_PhoneResponse_QNAME, PhoneResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link State }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ProfileInfo/", name = "State")
-    public JAXBElement<State> createState(State value) {
-        return new JAXBElement<State>(_State_QNAME, State.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link StateResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ProfileInfo/", name = "StateResponse")
-    public JAXBElement<StateResponse> createStateResponse(StateResponse value) {
-        return new JAXBElement<StateResponse>(_StateResponse_QNAME, StateResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Zip }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ProfileInfo/", name = "Zip")
-    public JAXBElement<Zip> createZip(Zip value) {
-        return new JAXBElement<Zip>(_Zip_QNAME, Zip.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ZipResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ProfileInfo/", name = "ZipResponse")
-    public JAXBElement<ZipResponse> createZipResponse(ZipResponse value) {
-        return new JAXBElement<ZipResponse>(_ZipResponse_QNAME, ZipResponse.class, null, value);
+    @XmlElementDecl(namespace = "http://com/", name = "registerResponse")
+    public JAXBElement<RegisterResponse> createRegisterResponse(RegisterResponse value) {
+        return new JAXBElement<RegisterResponse>(_RegisterResponse_QNAME, RegisterResponse.class, null, value);
     }
 
 }

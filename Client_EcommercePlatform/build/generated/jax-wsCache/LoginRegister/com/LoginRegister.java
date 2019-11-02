@@ -77,6 +77,18 @@ public interface LoginRegister {
 
     /**
      * 
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod(operationName = "ReturnName")
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "ReturnName", targetNamespace = "http://com/", className = "com.ReturnName")
+    @ResponseWrapper(localName = "ReturnNameResponse", targetNamespace = "http://com/", className = "com.ReturnNameResponse")
+    @Action(input = "http://com/LoginRegister/ReturnNameRequest", output = "http://com/LoginRegister/ReturnNameResponse")
+    public String returnName();
+
+    /**
+     * 
      * @param password
      * @param email
      * @return
@@ -92,17 +104,5 @@ public interface LoginRegister {
         String email,
         @WebParam(name = "password", targetNamespace = "")
         String password);
-
-    /**
-     * 
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod(operationName = "ReturnName")
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "ReturnName", targetNamespace = "http://com/", className = "com.ReturnName")
-    @ResponseWrapper(localName = "ReturnNameResponse", targetNamespace = "http://com/", className = "com.ReturnNameResponse")
-    @Action(input = "http://com/LoginRegister/ReturnNameRequest", output = "http://com/LoginRegister/ReturnNameResponse")
-    public String returnName();
 
 }

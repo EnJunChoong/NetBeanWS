@@ -36,7 +36,7 @@ public class LoginRegister {
             Class.forName("org.apache.derby.jdbc.ClientDriver");
             Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/sample", "app", "app");
             
-            String sql = "SELECT * FROM CUSTOMER WHERE EMAIL = '" + email + "' AND PASSWORD = '" + password + "'";
+            String sql = "SELECT NAME FROM CUSTOMER WHERE EMAIL = '" + email + "' AND PASSWORD = '" + password + "'";
             System.out.println(sql);
 
             Statement st = conn.createStatement();

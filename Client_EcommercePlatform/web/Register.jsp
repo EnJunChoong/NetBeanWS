@@ -6,25 +6,44 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html style="min-height:100%">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="CSS/client.css" rel="stylesheet" type="text/css"/>
         <title>Register Page</title>
+        
+        <style>
+            .center {
+                margin: auto;
+                width: 80%;
+            }
+            body {
+            background-image: url("https://images.unsplash.com/photo-1518112166137-85f9979a43aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80");
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position:relative;
+            }
+        </style>
     </head>
     <body>    
+        
+        <br>
+        <br>
+        <br>
+        <div class="center" style="width:400px;text-align:left;background-color:white; opacity: 0.8;">
         <form action="RegisterServlet" method="POST" onsubmit="return regFunc()">
              <ul class="form-style-1">
                 <h1>Register</h1>
-                <li>
+<!--                <li>
                     <label>Customer ID <span class="required">*</span></label>
                     <input type="text" name="id" id="id" class="field-long" />
-                </li>
+                </li>-->
                 <li>
                     <label>Customer Name <span class="required">*</span></label>
                     <input type="text" name="name" id="name" class="field-long" />
                 </li>
-                <li>
+<!--                <li>
                     <label>Discount Code <span class="required">*</span></label>
                     <select name="discountCode" class="field-select"> 
                         <option value="H">H</option>
@@ -32,11 +51,11 @@
                         <option value="L">L</option>
                         <option value="N">N</option>
                     </select>
-                </li>
+                </li>-->
                 <li>
                     <label>Zip Code <span class="required">*</span></label>
-                    <select name="zip" class="field-select">
-                        <option value="10095">10095</option>
+                    <input type="text" name="zip" id="zip" class="field-long">
+<!--                        <option value="10095">10095</option>
                         <option value="10096">10096</option>
                         <option value="12347">12347</option>
                         <option value="48124">48124</option>
@@ -47,7 +66,7 @@
                         <option value="95035">95035</option>
                         <option value="95051">95051</option>
                         <option value="95117">95117</option>
-                    </select>
+                    </select>-->
                 </li>
                 <li>
                     <label>Address Line 1 </label>
@@ -69,18 +88,18 @@
                     <label>Phone No. </label>
                     <input type="text" name="phone" id="phone" class="field-long" />
                 </li>
-                <li>
+<!--                <li>
                     <label>Fax No. </label>
                     <input type="text" name="fax" id="fax" class="field-long" />
-                </li>
+                </li>-->
                 <li>
                     <label>Email <span class="required">*</span></label>
                     <input type="email" name="email" id="email" class="field-long" />
                 </li>
-                <li>
+<!--                <li>
                     <label>Credit Limit <span class="required">*</span></label>
                     <input type="number" min="0" name="creditLimit" id="creditLimit" class="field-long" />
-                </li>
+                </li>-->
                 <li>
                     <label>Password <span class="required">*</span></label>
                     <input type="password" name="password" id="password" class="field-long" />
@@ -94,6 +113,7 @@
                 </li>               
              </ul>  
         </form>
+        </div>
     </body>
     
     <script type="text/javascript">
