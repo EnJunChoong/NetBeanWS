@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/WebServer_ProfileInfo/ProfileInfo?wsdl" uri="src/conf/xml-resources/web-service-references/ProfileInfo/wsdl/localhost_8080/WebServer_ProfileInfo/ProfileInfo.wsdl"/>
+    <system systemId="http://localhost:8080/WebServer_ProfileInfo/ProfileInfo?xsd=1" uri="src/conf/xml-resources/web-service-references/ProfileInfo/wsdl/localhost_8080/WebServer_ProfileInfo/ProfileInfo.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/CustomerWSApplication/CustomerWS?wsdl" uri="src/conf/xml-resources/web-service-references/CustomerWS/wsdl/localhost_8080/CustomerWSApplication/CustomerWS.wsdl"/>
+    <system systemId="http://localhost:8080/CustomerWSApplication/CustomerWS?xsd=1" uri="src/conf/xml-resources/web-service-references/CustomerWS/wsdl/localhost_8080/CustomerWSApplication/CustomerWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/WS-LoginRegister/LoginRegister?wsdl" uri="src/conf/xml-resources/web-service-references/LoginRegister/wsdl/localhost_8080/WS-LoginRegister/LoginRegister.wsdl"/>
+    <system systemId="http://localhost:8080/WS-LoginRegister/LoginRegister?xsd=1" uri="src/conf/xml-resources/web-service-references/LoginRegister/wsdl/localhost_8080/WS-LoginRegister/LoginRegister.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/WS-ProfileInfo/ProfileInfo?wsdl" uri="src/conf/xml-resources/web-service-references/ProfileInfo/wsdl/localhost_8080/WS-ProfileInfo/ProfileInfo.wsdl"/>
+    <system systemId="http://localhost:8080/WS-ProfileInfo/ProfileInfo?xsd=1" uri="src/conf/xml-resources/web-service-references/ProfileInfo/wsdl/localhost_8080/WS-ProfileInfo/ProfileInfo.xsd_1.xsd"/>
+</catalog>
