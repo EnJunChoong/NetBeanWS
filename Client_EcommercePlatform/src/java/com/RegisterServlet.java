@@ -52,9 +52,9 @@ public class RegisterServlet extends HttpServlet {
             out.println("</body>");
             out.println("</html>");
             */
-            
-            int id = Integer.parseInt(request.getParameter("id"));
-            String discountCode = request.getParameter("discountCode");
+//            
+//            int id = Integer.parseInt(request.getParameter("id"));
+//            String discountCode = request.getParameter("discountCode");
             String zip = request.getParameter("zip");
             String name = request.getParameter("name");  
             String address1 = request.getParameter("address1");
@@ -62,19 +62,19 @@ public class RegisterServlet extends HttpServlet {
             String city = request.getParameter("city");
             String state = request.getParameter("state"); 
             String phone = request.getParameter("phone");
-            String fax = request.getParameter("fax");
+//            String fax = request.getParameter("fax");
             String email = request.getParameter("email");
-            int creditLimit = Integer.parseInt(request.getParameter("creditLimit"));
+//            int creditLimit = Integer.parseInt(request.getParameter("creditLimit"));
             String password = request.getParameter("password"); 
             
-            boolean status = register(id, discountCode, zip, name, address1, address2, city, state, phone, fax, email, creditLimit, password);
+            boolean status = register(zip, name, address1, address2, city, state, phone, email, password);
             
             RequestDispatcher rdObj = null;
          
             
             if(status){
                 //out.println("Register Success");
-                out.write("<p id='successMsg' style='color: green; font-size: larger;'>Register Success. Please sign in.");
+                out.write("<p id='successMsg' style='color: lightgreen; font-size: larger;'>Register Success. Please sign in.");
                 rdObj = request.getRequestDispatcher("/index.jsp");
                 rdObj.include(request, response);
             }else{
@@ -123,11 +123,11 @@ public class RegisterServlet extends HttpServlet {
         return "Short description";
     }// </editor-fold>
 
-    private boolean register(int id, java.lang.String discountCode, java.lang.String zip, java.lang.String name, java.lang.String address1, java.lang.String address2, java.lang.String city, java.lang.String state, java.lang.String phone, java.lang.String fax, java.lang.String email, int creditLimit, java.lang.String password) {
+    private boolean register(java.lang.String zip, java.lang.String name, java.lang.String address1, java.lang.String address2, java.lang.String city, java.lang.String state, java.lang.String phone, java.lang.String email, java.lang.String password) {
         // Note that the injected javax.xml.ws.Service reference as well as port objects are not thread safe.
         // If the calling of port operations may lead to race condition some synchronization is required.
         com.LoginRegister port = service.getLoginRegisterPort();
-        return port.register(id, discountCode, zip, name, address1, address2, city, state, phone, fax, email, creditLimit, password);
+        return port.register(zip, name, address1, address2, city, state, phone, email, password);
     }
 
 

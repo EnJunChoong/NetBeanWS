@@ -61,8 +61,9 @@ public class LoginRegister {
      * Web service operation
      */
     @WebMethod(operationName = "register")
-    public boolean register(@WebParam(name = "id") int id, 
-            @WebParam(name = "discountCode") String discountCode, 
+    public boolean register(
+//            @WebParam(name = "id") int id, 
+//            @WebParam(name = "discountCode") String discountCode, 
             @WebParam(name = "zip") String zip, 
             @WebParam(name = "name") String name, 
             @WebParam(name = "address1") String address1, 
@@ -70,9 +71,9 @@ public class LoginRegister {
             @WebParam(name = "city") String city, 
             @WebParam(name = "state") String state, 
             @WebParam(name = "phone") String phone, 
-            @WebParam(name = "fax") String fax, 
+//            @WebParam(name = "fax") String fax, 
             @WebParam(name = "email") String email, 
-            @WebParam(name = "creditLimit") int creditLimit, 
+//            @WebParam(name = "creditLimit") int creditLimit, 
             @WebParam(name = "password") String password) {
         //TODO write your implementation code here:
         
@@ -81,9 +82,10 @@ public class LoginRegister {
             Class.forName("org.apache.derby.jdbc.ClientDriver");
             Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/sample", "app", "app");
 
-            String sql = "INSERT INTO APP.CUSTOMER (CUSTOMER_ID, DISCOUNT_CODE, ZIP, NAME, ADDRESSLINE1, ADDRESSLINE2, CITY, STATE, PHONE, FAX, EMAIL, CREDIT_LIMIT, PASSWORD)" 
-                    + "VALUES (" + id + ", "
-                    + "'" + discountCode + "', "
+            String sql = "INSERT INTO APP.CUSTOMER (ZIP, NAME, ADDRESSLINE1, ADDRESSLINE2, CITY, STATE, PHONE, EMAIL, PASSWORD)" 
+                    + "VALUES (" + ""
+//                    + "" + id + ", "
+//                    + "'" + discountCode + "', "
                     + "'" + zip + "', "
                     + "'" + name + "', "
                     + "'" + address1 + "', "
@@ -91,9 +93,9 @@ public class LoginRegister {
                     + "'" + city + "', "
                     + "'" + state + "', "
                     + "'" + phone + "', "
-                    + "'" + fax + "', "
+//                    + "'" + fax + "', "
                     + "'" + email + "', "
-                    + creditLimit + ", "
+//                    + creditLimit + ", "
                     + "'" + password + "')";
      
             System.out.println(sql);

@@ -54,8 +54,8 @@
                 </li>-->
                 <li>
                     <label>Zip Code <span class="required">*</span></label>
-                    <input type="text" name="zip" id="zip" class="field-long">
-<!--                        <option value="10095">10095</option>
+                    <select name="zip" class="field-long">
+                        <option value="10095">10095</option>
                         <option value="10096">10096</option>
                         <option value="12347">12347</option>
                         <option value="48124">48124</option>
@@ -66,7 +66,7 @@
                         <option value="95035">95035</option>
                         <option value="95051">95051</option>
                         <option value="95117">95117</option>
-                    </select>-->
+                    </select>
                 </li>
                 <li>
                     <label>Address Line 1 </label>
@@ -119,15 +119,15 @@
     <script type="text/javascript">
         
         function regFunc() {
-            var id = document.getElementById('id').value;
+//            var id = document.getElementById('id').value;
             var name = document.getElementById('name').value;
             var email = document.getElementById('email').value;
-            var credit = document.getElementById('creditLimit').value;
+//            var credit = document.getElementById('creditLimit').value;
             var password = document.getElementById("password").value;
-            if(!id){
-                alert("Customer ID cannot be empty");
-                return false;
-            }
+//            if(!id){
+//                alert("Customer ID cannot be empty");
+//                return false;
+//            }
             if(!name){
                 alert("Customer Name cannot be empty");
                 return false;
@@ -136,10 +136,10 @@
                 alert("Email cannot be empty");
                 return false;
             }
-            if(!credit){
-                alert("Credit Limit cannot be empty");
-                return false;
-            }
+//            if(!credit){
+//                alert("Credit Limit cannot be empty");
+//                return false;
+//            }
             if(!password){
                 alert("Password cannot be empty");
                 return false;

@@ -16,8 +16,6 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="discountCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="zip" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="address1" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
@@ -25,9 +23,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="city" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="state" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="phone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="fax" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="email" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="creditLimit" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="password" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
@@ -39,8 +35,6 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "register", propOrder = {
-    "id",
-    "discountCode",
     "zip",
     "name",
     "address1",
@@ -48,15 +42,11 @@ import javax.xml.bind.annotation.XmlType;
     "city",
     "state",
     "phone",
-    "fax",
     "email",
-    "creditLimit",
     "password"
 })
 public class Register {
 
-    protected int id;
-    protected String discountCode;
     protected String zip;
     protected String name;
     protected String address1;
@@ -64,50 +54,8 @@ public class Register {
     protected String city;
     protected String state;
     protected String phone;
-    protected String fax;
     protected String email;
-    protected int creditLimit;
     protected String password;
-
-    /**
-     * Gets the value of the id property.
-     * 
-     */
-    public int getId() {
-        return id;
-    }
-
-    /**
-     * Sets the value of the id property.
-     * 
-     */
-    public void setId(int value) {
-        this.id = value;
-    }
-
-    /**
-     * Gets the value of the discountCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDiscountCode() {
-        return discountCode;
-    }
-
-    /**
-     * Sets the value of the discountCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDiscountCode(String value) {
-        this.discountCode = value;
-    }
 
     /**
      * Gets the value of the zip property.
@@ -278,30 +226,6 @@ public class Register {
     }
 
     /**
-     * Gets the value of the fax property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getFax() {
-        return fax;
-    }
-
-    /**
-     * Sets the value of the fax property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setFax(String value) {
-        this.fax = value;
-    }
-
-    /**
      * Gets the value of the email property.
      * 
      * @return
@@ -323,22 +247,6 @@ public class Register {
      */
     public void setEmail(String value) {
         this.email = value;
-    }
-
-    /**
-     * Gets the value of the creditLimit property.
-     * 
-     */
-    public int getCreditLimit() {
-        return creditLimit;
-    }
-
-    /**
-     * Sets the value of the creditLimit property.
-     * 
-     */
-    public void setCreditLimit(int value) {
-        this.creditLimit = value;
     }
 
     /**

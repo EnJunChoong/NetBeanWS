@@ -27,17 +27,13 @@ public interface LoginRegister {
     /**
      * 
      * @param zip
+     * @param password
      * @param address2
      * @param city
-     * @param address1
-     * @param password
-     * @param discountCode
      * @param phone
+     * @param address1
      * @param name
-     * @param creditLimit
-     * @param id
      * @param state
-     * @param fax
      * @param email
      * @return
      *     returns boolean
@@ -48,10 +44,6 @@ public interface LoginRegister {
     @ResponseWrapper(localName = "registerResponse", targetNamespace = "http://com/", className = "com.RegisterResponse")
     @Action(input = "http://com/LoginRegister/registerRequest", output = "http://com/LoginRegister/registerResponse")
     public boolean register(
-        @WebParam(name = "id", targetNamespace = "")
-        int id,
-        @WebParam(name = "discountCode", targetNamespace = "")
-        String discountCode,
         @WebParam(name = "zip", targetNamespace = "")
         String zip,
         @WebParam(name = "name", targetNamespace = "")
@@ -66,12 +58,8 @@ public interface LoginRegister {
         String state,
         @WebParam(name = "phone", targetNamespace = "")
         String phone,
-        @WebParam(name = "fax", targetNamespace = "")
-        String fax,
         @WebParam(name = "email", targetNamespace = "")
         String email,
-        @WebParam(name = "creditLimit", targetNamespace = "")
-        int creditLimit,
         @WebParam(name = "password", targetNamespace = "")
         String password);
 
