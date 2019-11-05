@@ -4,14 +4,18 @@
     Author     : TEAM AWESOME
 --%>
 
+<%@page import="java.util.Iterator"%>
+<%@page import="java.util.List"%>
+<%@page import="java.util.List"%>
+<%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html style="min-height:100%">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Profile Info</title>
+        <title>Software Catalog</title>
     </head>
-        <style>
+    <style>
             .center {
                 margin: auto;
                 width: 80%;
@@ -27,8 +31,9 @@
     /*        .no-background {
                 background-image: url("images/blank.jpg");
             }*/
-        </style>
-    </head>
+    </style>
+    
+    
     
     <body>
         <br>
@@ -39,30 +44,16 @@
         <br>
         <br>
         <table class="center" style="width:90%" border="1">
-<!--            <thead>
+            <thead>
                 <tr>
-                    <th style="width:90%" border="0">Profile Info</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Availability</th>
                 </tr>
-            </thead>-->
+            </thead>
             <tbody>
-                <tr>
-                    <td>NAME</td>
-                    <td><%= request.getAttribute("Name") %></td>
-                </tr>
-                <tr>
-                    <td>Price</td>
-                    <td><%= request.getAttribute("Price") %></td>
-                </tr>
-                <tr>
-                    <td>Quantity</td>
-                    <td><%= request.getAttribute("Quantity") %></td>
-                </tr>
-                <tr>
-                    <td>Availability</td>
-                    <td>
-                        <%= request.getAttribute("Availability") %>
-                    </td>
-                </tr>
+                   <%= request.getAttribute("string") %>
             </tbody>
         </table>
         <br>

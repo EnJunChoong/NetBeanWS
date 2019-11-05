@@ -10,7 +10,7 @@
 <html style="min-height:100%">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Homepage</title>
         <style>
         .center {
             margin: auto;
@@ -45,14 +45,18 @@
             <form class="center" style="align-content:center;" action = "HardwareServlet">
                 <input style="width:100%; height:50px;align-content:center;font-size:14pt;" type="submit" value="Hardware"/>
                 <br>
+            </form>
                 <br>
+            <form class="center" style="align-content:center;" action = "SoftwareServlet">
                 <input style="width:100%; height:50px;align-content:center;font-size:14pt;" type="submit" value="Software"/>
                 <br>
+            </form>
                 <br>
+             <form class="center" style="align-content:center;" action = "FirmwareServlet">
                 <input style="width:100%; height:50px;align-content:center;font-size:14pt;" type="submit" value="Firmware"/>
                 <br>
-                <br>
             </form>
+                <br>
         </div>
     </body>
 </html>

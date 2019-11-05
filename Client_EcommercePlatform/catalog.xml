@@ -8,4 +8,6 @@
     <system systemId="http://localhost:8080/WS-ProfileInfo/ProfileInfo?xsd=1" uri="src/conf/xml-resources/web-service-references/ProfileInfo/wsdl/localhost_8080/WS-ProfileInfo/ProfileInfo.xsd_1.xsd"/>
     <system systemId="http://localhost:8080/WS-LoginRegister/LoginRegister?wsdl" uri="src/conf/xml-resources/web-service-references/LoginRegister/wsdl/localhost_8080/WS-LoginRegister/LoginRegister.wsdl"/>
     <system systemId="http://localhost:8080/WS-LoginRegister/LoginRegister?xsd=1" uri="src/conf/xml-resources/web-service-references/LoginRegister/wsdl/localhost_8080/WS-LoginRegister/LoginRegister.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/WS-Software/software?wsdl" uri="src/conf/xml-resources/web-service-references/software/wsdl/localhost_8080/WS-Software/software.wsdl"/>
+    <system systemId="http://localhost:8080/WS-Software/software?xsd=1" uri="src/conf/xml-resources/web-service-references/software/wsdl/localhost_8080/WS-Software/software.xsd_1.xsd"/>
 </catalog>

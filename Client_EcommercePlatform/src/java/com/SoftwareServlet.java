@@ -7,6 +7,8 @@ package com;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
@@ -16,8 +18,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.xml.ws.WebServiceRef;
-import software_table.ClassNotFoundException_Exception;
-import software_table.Software_Service;
 
 /**
  *
@@ -26,8 +26,9 @@ import software_table.Software_Service;
 @WebServlet(name = "SoftwareServlet", urlPatterns = {"/SoftwareServlet"})
 public class SoftwareServlet extends HttpServlet {
 
-    @WebServiceRef(wsdlLocation = "WEB-INF/wsdl/192.168.56.1_8080/WS-Software/software.wsdl")
+    @WebServiceRef(wsdlLocation = "WEB-INF/wsdl/localhost_8080/WS-Software/software.wsdl")
     private Software_Service service;
+   
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -41,21 +42,33 @@ public class SoftwareServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        String text;
+        
+                
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            HttpSession session = request.getSession();
             String productId = "SW";
-            getSoftware(productId);
-            String availability = availability();
-            Double cost = cost();
-            String productDescription = productDescription();
-            int quantity = quantity();
+            text = getSoftware(productId);
+//            while (getSoftware(productId)){
+//                
+//                list.add(productDescription());
+//                list.add(cost());
+//                list.add(quantity());
+//                list.add(availability());
+//                nestedList.add(list);
+////                String availability = availability();
+////                Double cost = cost();
+////                String productDescription = productDescription();
+////                int quantity = quantity();
+//            }
             
-            request.setAttribute("Name", productDescription);
-            request.setAttribute("Price", cost);
-            request.setAttribute("Quantity", quantity);
-            request.setAttribute("Availability", availability);
             
+            
+//            request.setAttribute("Name", listName);
+//            request.setAttribute("Price", listPrice);
+//            request.setAttribute("Quantity", listName);
+//            request.setAttribute("Availability", listAvail);
+            request.setAttribute("string", text);
             request.getRequestDispatcher("/SoftwareInfo.jsp").forward(request, response);
             response.sendRedirect(request.getContextPath() + "/SoftwareInfo.jsp");
             
@@ -103,38 +116,38 @@ public class SoftwareServlet extends HttpServlet {
         return "Short description";
     }// </editor-fold>
 
-    private String availability() {
+    private String getSoftware(java.lang.String productId) throws ClassNotFoundException_Exception {
         // Note that the injected javax.xml.ws.Service reference as well as port objects are not thread safe.
         // If the calling of port operations may lead to race condition some synchronization is required.
-        software_table.Software port = service.getSoftwarePort();
-        return port.availability();
+        com.Software port = service.getSoftwarePort();
+        return port.getSoftware(productId);
     }
 
-    private Double cost() {
-        // Note that the injected javax.xml.ws.Service reference as well as port objects are not thread safe.
-        // If the calling of port operations may lead to race condition some synchronization is required.
-        software_table.Software port = service.getSoftwarePort();
-        return port.cost();
-    }
-
-    private String productDescription() {
-        // Note that the injected javax.xml.ws.Service reference as well as port objects are not thread safe.
-        // If the calling of port operations may lead to race condition some synchronization is required.
-        software_table.Software port = service.getSoftwarePort();
-        return port.productDescription();
-    }
-
-    private int quantity() {
-        // Note that the injected javax.xml.ws.Service reference as well as port objects are not thread safe.
-        // If the calling of port operations may lead to race condition some synchronization is required.
-        software_table.Software port = service.getSoftwarePort();
-        return port.quantity();
-    }
-
-    private void getSoftware(java.lang.String productId) throws ClassNotFoundException_Exception {
-        // Note that the injected javax.xml.ws.Service reference as well as port objects are not thread safe.
-        // If the calling of port operations may lead to race condition some synchronization is required.
-        software_table.Software port = service.getSoftwarePort();
-        port.getSoftware(productId);
-    }
+//    private String availability() {
+//        // Note that the injected javax.xml.ws.Service reference as well as port objects are not thread safe.
+//        // If the calling of port operations may lead to race condition some synchronization is required.
+//        com.Software port = service.getSoftwarePort();
+//        return port.availability();
+//    }
+//
+//    private Double cost() {
+//        // Note that the injected javax.xml.ws.Service reference as well as port objects are not thread safe.
+//        // If the calling of port operations may lead to race condition some synchronization is required.
+//        com.Software port = service.getSoftwarePort();
+//        return port.cost();
+//    }
+//
+//    private String productDescription() {
+//        // Note that the injected javax.xml.ws.Service reference as well as port objects are not thread safe.
+//        // If the calling of port operations may lead to race condition some synchronization is required.
+//        com.Software port = service.getSoftwarePort();
+//        return port.productDescription();
+//    }
+//
+//    private int quantity() {
+//        // Note that the injected javax.xml.ws.Service reference as well as port objects are not thread safe.
+//        // If the calling of port operations may lead to race condition some synchronization is required.
+//        com.Software port = service.getSoftwarePort();
+//        return port.quantity();
+//    }
 }

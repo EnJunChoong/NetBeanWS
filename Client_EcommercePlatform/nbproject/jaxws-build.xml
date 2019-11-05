@@ -58,5 +58,21 @@
         <delete dir="${build.generated.sources.dir}/jax-ws/com"/>
         <delete dir="${build.generated.dir}/jax-wsCache/LoginRegister"/>
     </target>
-    <target name="wsimport-client-generate" depends="wsimport-client-ProfileInfo, wsimport-client-LoginRegister"/>
+    <target name="wsimport-client-software" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/software"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/software" destdir="${build.generated.dir}/jax-wsCache/software" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/software/wsdl/localhost_8080/WS-Software/software.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/WS-Software/software?wsdl" xnocompile="true" xendorsed="true" package="com">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/software/wsdl/localhost_8080/WS-Software/software.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/software"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/software">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-software" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/com"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/software"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-ProfileInfo, wsimport-client-LoginRegister, wsimport-client-software"/>
 </project>
