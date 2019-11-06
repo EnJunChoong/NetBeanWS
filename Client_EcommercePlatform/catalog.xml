@@ -12,4 +12,6 @@
     <system systemId="http://localhost:8080/WS-Software/software?xsd=1" uri="src/conf/xml-resources/web-service-references/software/wsdl/localhost_8080/WS-Software/software.xsd_1.xsd"/>
     <system systemId="http://localhost:8080/WS-FirmWare/firmware?wsdl" uri="src/conf/xml-resources/web-service-references/firmware/wsdl/localhost_8080/WS-FirmWare/firmware.wsdl"/>
     <system systemId="http://localhost:8080/WS-FirmWare/firmware?xsd=1" uri="src/conf/xml-resources/web-service-references/firmware/wsdl/localhost_8080/WS-FirmWare/firmware.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/WS-Hardware/hardware?wsdl" uri="src/conf/xml-resources/web-service-references/hardware/wsdl/localhost_8080/WS-Hardware/hardware.wsdl"/>
+    <system systemId="http://localhost:8080/WS-Hardware/hardware?xsd=1" uri="src/conf/xml-resources/web-service-references/hardware/wsdl/localhost_8080/WS-Hardware/hardware.xsd_1.xsd"/>
 </catalog>
