@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
-    <system systemId="http://localhost:8080/WS-LoginRegister/LoginRegister?wsdl" uri="wsdl/localhost_8080/WS-LoginRegister/LoginRegister.wsdl"/>
-    <system systemId="http://localhost:8080/WS-LoginRegister/LoginRegister?xsd=1" uri="wsdl/localhost_8080/WS-LoginRegister/LoginRegister.xsd_1.xsd"/>
-    <system systemId="http://localhost:8080/WS-ProfileInfo/ProfileInfo?wsdl" uri="wsdl/localhost_8080/WS-ProfileInfo/ProfileInfo.wsdl"/>
-    <system systemId="http://localhost:8080/WS-ProfileInfo/ProfileInfo?xsd=1" uri="wsdl/localhost_8080/WS-ProfileInfo/ProfileInfo.xsd_1.xsd"/>
-    <system systemId="http://localhost:8080/WS-Software/software?wsdl" uri="wsdl/localhost_8080/WS-Software/software.wsdl"/>
-    <system systemId="http://localhost:8080/WS-Software/software?xsd=1" uri="wsdl/localhost_8080/WS-Software/software.xsd_1.xsd"/>
-</catalog>
