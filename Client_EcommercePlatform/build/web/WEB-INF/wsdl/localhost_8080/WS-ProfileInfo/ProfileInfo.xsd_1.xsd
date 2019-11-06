@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://ProfileInfo/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ProfileInfo/">
+
+<xs:element name="Address1" type="tns:Address1"/>
+
+<xs:element name="Address1Response" type="tns:Address1Response"/>
+
+<xs:element name="Address2" type="tns:Address2"/>
+
+<xs:element name="Address2Response" type="tns:Address2Response"/>
+
+<xs:element name="City" type="tns:City"/>
+
+<xs:element name="CityResponse" type="tns:CityResponse"/>
+
+<xs:element name="ClassNotFoundException" type="tns:ClassNotFoundException"/>
+
+<xs:element name="CustomerName" type="tns:CustomerName"/>
+
+<xs:element name="CustomerNameResponse" type="tns:CustomerNameResponse"/>
+
+<xs:element name="GetProfile" type="tns:GetProfile"/>
+
+<xs:element name="GetProfileResponse" type="tns:GetProfileResponse"/>
+
+<xs:element name="Phone" type="tns:Phone"/>
+
+<xs:element name="PhoneResponse" type="tns:PhoneResponse"/>
+
+<xs:element name="State" type="tns:State"/>
+
+<xs:element name="StateResponse" type="tns:StateResponse"/>
+
+<xs:element name="Zip" type="tns:Zip"/>
+
+<xs:element name="ZipResponse" type="tns:ZipResponse"/>
+
+<xs:complexType name="Zip">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ZipResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="State">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="StateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Phone">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="PhoneResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="City">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="CityResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Address1">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="Address1Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CustomerName">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="CustomerNameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Address2">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="Address2Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GetProfile">
+<xs:sequence>
+<xs:element name="Email" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GetProfileResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ClassNotFoundException">
+<xs:sequence>
+<xs:element name="exception" type="tns:throwable" minOccurs="0"/>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="throwable">
+<xs:sequence>
+<xs:element name="stackTrace" type="tns:stackTraceElement" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="stackTraceElement" final="extension restriction">
+<xs:sequence/>
+</xs:complexType>
+</xs:schema>
