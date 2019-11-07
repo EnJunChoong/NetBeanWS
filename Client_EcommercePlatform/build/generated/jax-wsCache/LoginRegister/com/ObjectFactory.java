@@ -87,8 +87,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReturnName }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReturnName }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ReturnName }{@code >}
      */
     @XmlElementDecl(namespace = "http://com/", name = "ReturnName")
     public JAXBElement<ReturnName> createReturnName(ReturnName value) {
@@ -96,8 +100,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReturnNameResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReturnNameResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ReturnNameResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://com/", name = "ReturnNameResponse")
     public JAXBElement<ReturnNameResponse> createReturnNameResponse(ReturnNameResponse value) {
@@ -105,8 +113,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Login }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Login }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Login }{@code >}
      */
     @XmlElementDecl(namespace = "http://com/", name = "login")
     public JAXBElement<Login> createLogin(Login value) {
@@ -114,8 +126,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link LoginResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link LoginResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link LoginResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://com/", name = "loginResponse")
     public JAXBElement<LoginResponse> createLoginResponse(LoginResponse value) {
@@ -123,8 +139,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Register }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Register }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Register }{@code >}
      */
     @XmlElementDecl(namespace = "http://com/", name = "register")
     public JAXBElement<Register> createRegister(Register value) {
@@ -132,8 +152,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link RegisterResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link RegisterResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link RegisterResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://com/", name = "registerResponse")
     public JAXBElement<RegisterResponse> createRegisterResponse(RegisterResponse value) {

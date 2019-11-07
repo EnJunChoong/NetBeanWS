@@ -8,6 +8,10 @@
         <servlet-name>Firmware1</servlet-name>
         <servlet-class>com.Firmware1</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>HardwareServlet</servlet-name>
+        <servlet-class>com.HardwareServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>FirmwareServlet</servlet-name>
         <url-pattern>/FirmwareServlet</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>Firmware1</servlet-name>
         <url-pattern>/Firmware1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HardwareServlet</servlet-name>
+        <url-pattern>/HardwareServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

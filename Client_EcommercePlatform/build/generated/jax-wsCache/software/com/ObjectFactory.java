@@ -76,8 +76,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ClassNotFoundException }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ClassNotFoundException }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ClassNotFoundException }{@code >}
      */
     @XmlElementDecl(namespace = "http://com/", name = "ClassNotFoundException")
     public JAXBElement<ClassNotFoundException> createClassNotFoundException(ClassNotFoundException value) {
@@ -85,8 +89,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetSoftware }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetSoftware }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link GetSoftware }{@code >}
      */
     @XmlElementDecl(namespace = "http://com/", name = "GetSoftware")
     public JAXBElement<GetSoftware> createGetSoftware(GetSoftware value) {
@@ -94,8 +102,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetSoftwareResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetSoftwareResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link GetSoftwareResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://com/", name = "GetSoftwareResponse")
     public JAXBElement<GetSoftwareResponse> createGetSoftwareResponse(GetSoftwareResponse value) {

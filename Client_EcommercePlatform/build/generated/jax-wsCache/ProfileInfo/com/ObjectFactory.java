@@ -202,8 +202,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Address1 }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Address1 }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Address1 }{@code >}
      */
     @XmlElementDecl(namespace = "http://ProfileInfo/", name = "Address1")
     public JAXBElement<Address1> createAddress1(Address1 value) {
@@ -211,8 +215,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Address1Response }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Address1Response }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Address1Response }{@code >}
      */
     @XmlElementDecl(namespace = "http://ProfileInfo/", name = "Address1Response")
     public JAXBElement<Address1Response> createAddress1Response(Address1Response value) {
@@ -220,8 +228,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Address2 }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Address2 }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Address2 }{@code >}
      */
     @XmlElementDecl(namespace = "http://ProfileInfo/", name = "Address2")
     public JAXBElement<Address2> createAddress2(Address2 value) {
@@ -229,8 +241,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Address2Response }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Address2Response }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Address2Response }{@code >}
      */
     @XmlElementDecl(namespace = "http://ProfileInfo/", name = "Address2Response")
     public JAXBElement<Address2Response> createAddress2Response(Address2Response value) {
@@ -238,8 +254,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link City }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link City }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link City }{@code >}
      */
     @XmlElementDecl(namespace = "http://ProfileInfo/", name = "City")
     public JAXBElement<City> createCity(City value) {
@@ -247,8 +267,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CityResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link CityResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link CityResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://ProfileInfo/", name = "CityResponse")
     public JAXBElement<CityResponse> createCityResponse(CityResponse value) {
@@ -256,8 +280,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ClassNotFoundException }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ClassNotFoundException }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ClassNotFoundException }{@code >}
      */
     @XmlElementDecl(namespace = "http://ProfileInfo/", name = "ClassNotFoundException")
     public JAXBElement<ClassNotFoundException> createClassNotFoundException(ClassNotFoundException value) {
@@ -265,8 +293,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CustomerName }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link CustomerName }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link CustomerName }{@code >}
      */
     @XmlElementDecl(namespace = "http://ProfileInfo/", name = "CustomerName")
     public JAXBElement<CustomerName> createCustomerName(CustomerName value) {
@@ -274,8 +306,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CustomerNameResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link CustomerNameResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link CustomerNameResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://ProfileInfo/", name = "CustomerNameResponse")
     public JAXBElement<CustomerNameResponse> createCustomerNameResponse(CustomerNameResponse value) {
@@ -283,8 +319,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetProfile }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetProfile }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link GetProfile }{@code >}
      */
     @XmlElementDecl(namespace = "http://ProfileInfo/", name = "GetProfile")
     public JAXBElement<GetProfile> createGetProfile(GetProfile value) {
@@ -292,8 +332,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetProfileResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetProfileResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link GetProfileResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://ProfileInfo/", name = "GetProfileResponse")
     public JAXBElement<GetProfileResponse> createGetProfileResponse(GetProfileResponse value) {
@@ -301,8 +345,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Phone }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Phone }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Phone }{@code >}
      */
     @XmlElementDecl(namespace = "http://ProfileInfo/", name = "Phone")
     public JAXBElement<Phone> createPhone(Phone value) {
@@ -310,8 +358,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link PhoneResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link PhoneResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link PhoneResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://ProfileInfo/", name = "PhoneResponse")
     public JAXBElement<PhoneResponse> createPhoneResponse(PhoneResponse value) {
@@ -319,8 +371,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link State }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link State }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link State }{@code >}
      */
     @XmlElementDecl(namespace = "http://ProfileInfo/", name = "State")
     public JAXBElement<State> createState(State value) {
@@ -328,8 +384,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link StateResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link StateResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link StateResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://ProfileInfo/", name = "StateResponse")
     public JAXBElement<StateResponse> createStateResponse(StateResponse value) {
@@ -337,8 +397,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Zip }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Zip }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Zip }{@code >}
      */
     @XmlElementDecl(namespace = "http://ProfileInfo/", name = "Zip")
     public JAXBElement<Zip> createZip(Zip value) {
@@ -346,8 +410,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ZipResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ZipResponse }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ZipResponse }{@code >}
      */
     @XmlElementDecl(namespace = "http://ProfileInfo/", name = "ZipResponse")
     public JAXBElement<ZipResponse> createZipResponse(ZipResponse value) {
